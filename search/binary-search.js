@@ -3,7 +3,7 @@ function binarySearch(arr, x)
   let l = 0;
   let r = arr.length - 1;
   let mid;
-  while (r >= l) {
+  while (l <= r) {
     mid = l + Math.floor((r - l) / 2);
 
     // If the element is present at the middle
@@ -26,3 +26,5 @@ function binarySearch(arr, x)
   // present in array
   return -1;
 }
+
+console.log(binarySearch([5], 5))
